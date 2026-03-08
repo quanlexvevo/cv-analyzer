@@ -13,10 +13,7 @@ app = FastAPI(title="CV Analyzer API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+    allow_origins=["http://localhost:3000", "https://cv-analyzer-coral.vercel.app"],
 
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
