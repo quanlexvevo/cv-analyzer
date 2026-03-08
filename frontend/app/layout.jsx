@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "CV Analyzer — NIGHT CITY EDITION",
+  title: "CV Analyzer",
   description: "CV'nizi AI ile analiz edin",
 };
 
