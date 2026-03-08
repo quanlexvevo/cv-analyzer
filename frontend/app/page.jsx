@@ -94,7 +94,10 @@ export default function Home() {
     const formData = new FormData();
     formData.append("file", file);
     try {
-      const res = await fetch("http://localhost:8000/analyze", { method: "POST", body: formData });
+    const res = await fetch("https://cv-analyzer-backend-i5nq.onrender.com/analyze", {
+  method: "POST",
+  body: formData,
+});
       if (!res.ok) throw new Error("ANALİZ BAŞARISIZ — Sunucu hatası.");
       setResult(await res.json());
     } catch (err) {
